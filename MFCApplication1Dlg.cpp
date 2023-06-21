@@ -299,7 +299,7 @@ bool CMFCApplication1Dlg::isInCircle(int x, int y, int cx, int cy)
 	double dX = x - cx;
 	double dY = y - cy;
 	double dDist = dX * dX + dY * dY;
-	if (dDist <= m_radi + 2 && dDist >= m_radi - 2 )
+	if (dDist <= m_radi + m_radi/10 && dDist >= m_radi - m_radi/10 )
 	{
 		flg = true;
 	}
